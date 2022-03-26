@@ -578,6 +578,13 @@ button:focus {
     background-attachment: fixed;
 }
 
+.bg-cta-img2 {
+    background-image: url('../img/t3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /*==========================
         9.PORTFOLIO
 ============================*/
@@ -794,6 +801,13 @@ button:focus {
 
 .bg-people {
     background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg-people1 {
+    background-image: url('../img/t3.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
