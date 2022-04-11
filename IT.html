@@ -30,7 +30,9 @@
         <!-- pe-icon-7 css -->
         <link href="css/pe-icon-7.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Owl Slider -->
         <link rel="stylesheet" href="css/owl.carousel.css" />
         <link rel="stylesheet" href="css/owl.theme.css" />
@@ -67,7 +69,7 @@
                             <a href="#services" class="nav-link">სერვისები</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#client" class="nav-link">კლიენტები</a>
+                            <a href="#client" class="nav-link">პარტნიორები</a>
                         </li>
                         <li class="nav-item">
                             <a href="#contact" class="nav-link">კონტაქტი</a>
@@ -145,7 +147,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="about-img mt-3">
-                            <img src="img/boo1.jpg" alt="" class="img-fluid mx-auto d-block position-relative about-tween">
+                            <img src="img/getest.png" alt="" class="img-fluid mx-auto d-block position-relative about-tween">
                         </div>
 
                     </div>
@@ -295,33 +297,14 @@
                     <div class="col-lg-4">
                         <div class="client_boxes mt-3 text-center">
                             <div class="mt-3">
-                                <img src="img/client/client.png" alt="" class="img-fluid rounded-circle ml-3">
+                                <img src="img/logo large.png" alt="" class="img-fluid rounded-circle ml-3">
                             </div>
-                            <h6 class="text-muted font-weight-bold mb-0 mt-3">დაემატება</h6>
-                            <h5 class="font-weight-bold p-0 mt-2">დაემატება</h5>
-                            <p class="text-muted m-3">დაემატება.</p>
+                            <h6 class="text-muted font-weight-bold mb-0 mt-3">UTM - Under The Mask</h6>
+                            <h5 class="font-weight-bold p-0 mt-2"><a href="https://utmcom.net">გადახედე ფორუმს</a></h5>
+                            <p class="text-muted m-3">ეს არის ქართული ჰაკერული ფორუმი, რომელიც საკმაოდ ღირებულ ცოდნას იძლევა</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="client_boxes mt-3 text-center">
-                            <div class="mt-3">
-                                <img src="img/client/client.png" alt="" class="img-fluid rounded-circle ml-3">
-                            </div>
-                            <h6 class="text-muted font-weight-bold mb-0 mt-3">დაემატება</h6>
-                            <h5 class="font-weight-bold p-0 mt-2">დაემატება</h5>
-                            <p class="text-muted m-3">დაემატება.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="client_boxes mt-3 text-center">
-                            <div class="mt-3">
-                                <img src="img/client/client.png" alt="" class="img-fluid rounded-circle ml-3">
-                            </div>
-                            <h6 class="text-muted font-weight-bold mb-0 mt-3">დაემატება</h6>
-                            <h5 class="font-weight-bold p-0 mt-2">დაემატება</h5>
-                            <p class="text-muted m-3">დაემატება.</p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </section>
@@ -457,38 +440,54 @@
         </section>
         <!-- End Contact -->
 
-
-
-
-
-
-
-
-
         <!-- Start Footer -->
-        <footer class="footer_detail" id="pentest">
+        <footer class="footer_detail">
             <div class="container">
-                <div class="row pt-5 pb-5">
-                    <div class="col-lg-12">
-                     <iframe width="900" height="900" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
+                <div class="row pt-5 pb-5"></div>
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <h6 class="mt-3 text-white text-uppercase">მნიშვნელოვანი ლინკები</h6>
+                        <ul class="list-unstyled footer_menu_list mt-3">
+                            <li><a href="/uploads/GETESTERS Terms and Conditions.pdf" target=".blank">Terms & Conditions</a></li>
+                            <li><a href="/uploads/GETESTERS Privacy Policy.pdf">Privacy Policy</a></li>
+                            <li><a href="https://utmcom.net" target=".blank">ქართული ფორუმი</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="mt-3 text-white text-uppercase">პარტნიორები</h6>
+                        <ul class="list-unstyled footer_menu_list mt-3">
+                            <li><a href="">ჯიტესტერსი</a></li>
+                            <li><a href="">ელოდება</a></li>
+                            <li><a href="">ახალ</a></li>
+                            <li><a href="">პარტნიორებს</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="mt-3 text-white text-uppercase">მხარდაჭერა</h6>
+                        <ul class="list-unstyled footer_menu_list mt-3">
+                            <li><a>getesters@elude.in</a></li>
+                            <li><a>getesterscompany@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="mt-3 text-white text-uppercase">ჩვენი სამიზნეები</h6>
+                        <ul class="list-unstyled footer_menu_list mt-3">
+                            <li><a href="https://immunefi.com/explore/" target=".blank">Immunefi</a></li>
+                            <li><a href="https://hackerone.com/bug-bounty-programs" target=".blank">HackerOne</a></li>
+                            <li><a href="https://yeswehack.com/programs" target=".blank">YesWeHack</a></li>
+                            <li><a href="https://www.intigriti.com/programs" target=".blank">Intigriti</a></li>
+                        </ul>
                     </div>
                 </div>
-
-
-
-
-
-                
                 <div class="fot_bor"></div>
                 <div class="row pt-3 pb-3">
                     <div class="col-lg-12">
                         <div class="float-left float_none">
-                            <p class="copy-rights mb-0"><i class="fa fa-copyright"></i> <script>document.write(new Date().getFullYear())</script><a target="_blank" href="index.html" class="getester"> GETESTERS</a></p>
+                            <p class="copy-rights mb-0"><a target="_blank" href="index.html" class="getester"><i class="fa fa-copyright"></i> GETESTERS</a></p>
                         </div>
                         <div class="float-right float_none">
                             <ul class="list-inline fot_social mb-0">
-                                <li class="list-inline-item"><a href="" target=".blank" class="social-icon text-muted"><i class="mdi mdi-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="" target=".blank" class="social-icon text-muted"><i class="mdi mdi-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="#" target=".blank" class="social-icon text-muted"><i class="mdi mdi-telegram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -497,6 +496,7 @@
         </footer>
         <!-- End Footer -->
 
+        
         <!-- Back to top -->
         <a href="#" class="back_top" style="display: inline;"> <i class="pe-7s-up-arrow"> </i> </a>
             
