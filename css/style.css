@@ -238,6 +238,7 @@ button:focus {
     margin-bottom: 0px;
     transition: all 0.5s ease-in-out;
     background-color: transparent;
+    text-align: center;
 }
 
 .custom-nav.stickyadd {
@@ -272,14 +273,15 @@ button:focus {
 .custom-nav.stickyadd .navbar-nav li a:after,
 .custom-nav .navbar-nav li a:after {
     content: '';
-    width: 20px;
+    width: 70px;
     height: 2px;
-    left: 0px;
+    left: 45%;
     bottom: 0px;
     position: absolute;
     transition: all 0.5s;
     opacity: 0;
     background: #a9143f;
+    align-content: center;
 }
 
 .custom-nav.stickyadd .navbar-nav li.active a:after,
@@ -295,7 +297,7 @@ button:focus {
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 0px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .custom-nav.stickyadd .navbar-nav li a {
@@ -386,6 +388,7 @@ button:focus {
     position: relative;
     display: inline-block;
     padding: 5px 40px;
+    text-align: center;
 }
 
 .skill_home li:last-child:after {
